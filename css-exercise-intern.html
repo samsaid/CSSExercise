@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <title>CSS exercise: property cards</title>
+
+  <style type="text/css">
+
+    /* setting up open sans */
+    @font-face {
+      font-family: "OpenSans";
+      src: url("./resources/Open_Sans/OpenSans-Regular.ttf") format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "OpenSans";
+      src: url("./resources/Open_Sans/OpenSans-Semibold.ttf") format('truetype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "OpenSans";
+      src: url("./resources/Open_Sans/OpenSans-Bold.ttf") format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    body {
+      font-family: "OpenSans", sans-serif;
+    }
+
+    /* CSS exercise: add your CSS here */
+	
+	  /*Image Border*/
+	  img {
+		  border: 1px solid #CCCCCC;
+	  }
+
+	/*Typography*/
+
+	/*Subheading*/
+	  subheading {
+		font: "open-sans";
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.4px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #888888;
+		padding-top: 8px;
+ 		display: inline-block;
+	  }
+	
+	  /*Headline 2*/
+	    headline {
+		font: "open-sans";
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 600;
+		padding-top: 4px;
+		padding-bottom: 0px;
+ 		display: inline-block;
+			
+	  }
+	  
+	  /*Body 1*/ 
+	   body {
+		font: "open-sans";
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 400;
+	  }
+	  
+	  /*Costal Blue Font*/
+	  body2{
+		  font-weight: 400;
+		  color: #1872AD
+	  }
+	  
+	  body2:hover{
+		  text-decoration: underline;
+	  }
+	 
+	/*Responsive grid*/
+	  .cardSet {
+    display: grid;
+	/*padding for entire page*/
+	margin: 100px 100px 100px 100px;
+  	/* this line defines the number of grid columns */
+  	grid-template-columns: repeat(2, 1fr);
+ 	 /* this line makes the columns responsive to the page */
+ 	grid-template-columns: repeat(2, minmax(250px, 1fr) );
+ 	/* this line wraps the card sets to the page width */
+ 	grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) );
+	/*gap between top row and row beneath*/
+ 	grid-row-gap: 48px;
+}
+	
+		 
+	 /*Static 2x2 Grid*/ 
+	/* *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html{
+  background-color:#eee;
+}
+.cardSet{
+  margin: 100px auto;
+  width:510px;
+  height:400px;
+  display:grid;
+  grid-template-columns: 235px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 48px;
+  grid-row-gap: 48px;
+	  grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) );
+}
+	*/
+	</style>
+
+</head>
+<body>
+
+<div class="cardSet">
+  <div class="cardPropertyCard">
+    <a class="cardImage">
+      
+	<img src="resources/example-property-1.jpg" width="230" height="150" alt="example-property-1"/> </a>
+	  <br>
+    <subheading> <span class="cardStatusLine">For Sale - MLS 1234567</span> </subheading>
+	  <br>
+    <headline> <span class="cardTitleLine">$500,000</span></headline>
+	  <br>
+    <span class="cardLine">3bd, 2.5ba, 1,380 sqft</span>
+	  <br>
+   <body2> <a class="cardLine">10474 Clay St, San Jose,<br>CA 95125</a></body2>
+  </div>
+  <div class="cardPropertyCard">
+    <a class="cardImage">
+	<img src="resources/example-property-2.jpg" width="230" height="150" alt="example-property-2"/> </a>
+	  <br>
+	
+    <subheading><span class="cardStatusLine">For Sale - MLS 1234568</span></subheading>
+	  <br>
+    <headline><span class="cardTitleLine">$495,000</span></headline>
+	  <br>
+    <underline><span class="cardLine">3bd, 1.5ba, 1,170 sqft</span></underline>
+	  <br>
+    <body2><a class="cardLine" >10476 Clay St, San Jose,<br>CA 95125</a></body2>
+  </div>
+  <div class="cardPropertyCard">
+    <a class="cardImage">
+	<img src="resources/example-property-3.jpg" width="230" height="150" alt="example-property-3"/> </a>
+	  <br>
+    <subheading><span class="cardStatusLine">For Sale - MLS 1234569</span></subheading>
+	  <br>
+   <headline><span class="cardTitleLine">$510,000</span></headline>
+	  <br>
+    <span class="cardLine"> 3bd, 2ba, 1,280 sqft</span>
+	  <br>
+    <body2><a class="cardLine">10478 Clay St, San Jose,<br>CA 95125</a></body2>
+  </div>
+  <div class="cardPropertyCard">
+    <a href="#" class="cardImage">
+	<img src="resources/example-property-1.jpg" width="230" height="150" alt="example-property-1"/> </a>
+	  <br>
+    <subheading><span class="cardStatusLine">For Sale - MLS 1234570</span></subheading>
+	  <br>
+    <headline><span class="cardTitleLine">$480,000</span></headline>
+	  <br>
+    <span class="cardLine"> 2bd, 2ba, 1,350 sqft</span>
+	  <br>
+    <body2><a class="cardLine">10480 Clay St, San Jose,<br>CA 95125</a></body2>
+  </div>
+</div>
+
+</body>
+</html>
