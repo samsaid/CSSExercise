@@ -1,5 +1,6 @@
 # CSSExercise
-A page showcasing real estate properties using responsive wrap that adjusts to screen and browser size.
+Designed realestate property cards and implemented with HTML and CSS.
 
-![Image description](Screen Shot 2019-11-21 at 12.20.32 PM.png)
+![Image description](https://github.com/samsaid/CSSExercise/blob/master/Screen%20Shot%202019-11-21%20at%2012.20.32%20PM.png)
 
+![Image description](https://github.com/samsaid/CSSExercise/blob/master/Screen%20Shot%202019-11-21%20at%2012.20.39%20PM.png)
